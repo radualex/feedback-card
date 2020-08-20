@@ -1,6 +1,12 @@
+* {
+  margin: 0;
+}
+
+.material-icons {
+  user-select: none;
+}
+
 .App {
-  /* font-family: sans-serif;
-  text-align: center; */
   width: 99vw;
   height: 99vh;
 

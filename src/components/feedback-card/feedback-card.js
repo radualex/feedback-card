@@ -7,7 +7,9 @@ import Mood from "../mood/mood";
 export default function Card() {
   return (
     <div className="wrapper-card">
-      <div className="header-card"></div>
+      <div className="header-card">
+        <span class="material-icons">close</span>
+      </div>
       <div className="content-card">
         <div className="top-content-wrapper">
           <p className="question-card">
@@ -20,6 +22,10 @@ export default function Card() {
           </div>
         </div>
         <MessageBox />
+        <div className="footer-wrapper">
+          <span>Skip</span>
+          <button>Submit</button>
+        </div>
       </div>
     </div>
   );

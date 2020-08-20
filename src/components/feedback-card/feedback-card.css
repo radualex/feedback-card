@@ -6,7 +6,23 @@
   display: flex;
   flex-direction: column;
 
-  padding: 25px;
+  padding: 20px 25px 25px 25px;
+}
+
+.wrapper-card .header-card {
+  height: 18px;
+  text-align: right;
+}
+
+.wrapper-card .header-card .material-icons {
+  font-size: 18px;
+  margin: 0 -5px 0 0;
+  color: #a2a8bb;
+}
+
+.wrapper-card .header-card .material-icons:hover {
+  cursor: pointer;
+  color: #000000;
 }
 
 .wrapper-card .content-card {
@@ -32,8 +48,6 @@
   text-align: center;
 
   color: #202842;
-
-  margin: 10px 0 0 0;
 }
 
 .wrapper-card .content-card .top-content-wrapper .sentiment-wrapper {
@@ -50,4 +64,62 @@
   .sentiment-wrapper
   .wrapper-mood:nth-child(2) {
   margin: 0 10px;
+}
+
+.wrapper-card .content-card .footer-wrapper {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper-card .content-card .footer-wrapper span {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  user-select: none;
+
+  color: #5d698d;
+}
+
+.wrapper-card .content-card .footer-wrapper span:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+.wrapper-card .content-card .footer-wrapper button {
+  width: 90px;
+  height: 39px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+
+  text-align: center;
+
+  color: #ffffff;
+  background: #3457dc;
+
+  border: none;
+  border-radius: 5px;
+}
+
+.wrapper-card .content-card .footer-wrapper button:focus {
+  outline: none;
+  border: none;
+}
+
+.wrapper-card .content-card .footer-wrapper button:hover {
+  background: #000000;
+  cursor: pointer;
+}
+
+.wrapper-card .content-card .footer-wrapper button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
