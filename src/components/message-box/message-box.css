@@ -1,0 +1,32 @@
+.wrapper-message-box p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #202842;
+
+  margin: 0 0 6px 0;
+}
+
+.wrapper-message-box textarea {
+  background: #ffffff;
+  border: 1px solid #dcdff1;
+  border-radius: 5px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+
+  padding: 10px 0 0 15px;
+  width: 330px;
+  height: 71px;
+  resize: none;
+}
+
+.wrapper-message-box textarea::placeholder {
+  color: #5d698d;
+}
