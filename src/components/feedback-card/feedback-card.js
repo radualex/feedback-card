@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./feedback-card.css";
 
 import MessageBox from "../message-box/message-box";
 import Mood from "../mood/mood";
 
+let moods = [
+  "sentiment_very_dissatisfied",
+  "sentiment_satisfied",
+  "sentiment_very_satisfied"
+];
+
 export default function Card() {
+  const [active, setActive] = useState(0);
+
+  let _handleOnClickSentiment = (index) => {
+    setActive(index);
+  };
+
   return (
     <div className="wrapper-card">
       <div className="header-card">
@@ -16,9 +28,14 @@ export default function Card() {
             How likely are you to answer to this question?
           </p>
           <div className="sentiment-wrapper">
-            <Mood sentiment="sentiment_very_dissatisfied" />
-            <Mood sentiment="sentiment_satisfied" />
-            <Mood sentiment="sentiment_very_satisfied" />
+            {moods.map((mood, index) => (
+              <Mood
+                index={index}
+                sentiment={mood}
+                active={active === index}
+                onClick={_handleOnClickSentiment}
+              />
+            ))}
           </div>
         </div>
         <MessageBox />
