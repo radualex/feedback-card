@@ -11,7 +11,7 @@ let moods = [
 ];
 
 export default function Card() {
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(-1);
 
   let _handleOnClickSentiment = (index) => {
     setActive(index);
